@@ -1,6 +1,6 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; min-height: 100%; }
-body { font-family: Arial, Helvetica, sans-serif; background: #272921; color: #faf7ee; }
+body { font-family: var(--font-montserrat), Arial, sans-serif; background: #272921; color: #faf7ee; }
 .coming-soon { position: relative; isolation: isolate; min-height: 100svh; display: flex; flex-direction: column; padding: 48px 7vw 28px; overflow: hidden; }
 .wallpaper { object-fit: cover; object-position: center; z-index: -3; }
 .shade { position: absolute; inset: 0; z-index: -2; background: linear-gradient(90deg, rgba(22, 27, 23, .86) 0%, rgba(22, 27, 23, .68) 38%, rgba(22, 27, 23, .12) 100%), linear-gradient(0deg, rgba(22, 27, 23, .6), transparent 30%); }
@@ -10,7 +10,7 @@ body { font-family: Arial, Helvetica, sans-serif; background: #272921; color: #f
 .message { width: min(100%, 700px); margin-block: auto; padding-block: 100px; }
 .eyebrow { display: flex; align-items: center; gap: 12px; text-transform: uppercase; font-size: 11px; letter-spacing: 3px; line-height: 1.7; color: #e6dac7; margin: 0 0 26px; }
 .eyebrow > span { width: 7px; height: 7px; border-radius: 50%; background: #d9bc8e; }
-h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-size: clamp(56px, 7.5vw, 108px); line-height: 1.02; letter-spacing: -3px; margin: 0 0 32px; max-width: 680px; }
+h1 { font-weight: 400; font-size: clamp(56px, 7.5vw, 108px); line-height: 1.02; letter-spacing: -3px; margin: 0 0 32px; max-width: 680px; }
 .description { max-width: 365px; font-size: 18px; line-height: 1.7; margin: 0 0 12px; }
 .return-note { font-size: 14px; line-height: 1.7; color: #d6d3ca; margin: 0; }
 .signature { width: 54px; height: 1px; background: #d9bc8e; margin-top: 38px; }
