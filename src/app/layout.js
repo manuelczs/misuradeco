@@ -1,13 +1,13 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Misuradeco',
-  description: 'Next.js application',
+  title: 'Misuradeco | En construcción',
+  description: 'Estamos preparando un nuevo espacio para inspirarte. Muy pronto, cada detalle en su lugar.',
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body>{children}</body>
     </html>
   );

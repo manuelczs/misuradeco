@@ -10,6 +10,7 @@
 
 # production
 /build
+/public
 
 # local env files
 .env*
