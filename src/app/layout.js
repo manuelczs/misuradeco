@@ -1,5 +1,5 @@
 import { Montserrat } from 'next/font/google';
-import './globals.css';
+import { Provider } from '../components/ui/provider';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -8,14 +8,16 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: 'Misuradeco | En construcción',
+  title: 'Misura Deco | En construcción',
   description: 'Estamos preparando un nuevo espacio para inspirarte. Muy pronto, cada detalle en su lugar.',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={montserrat.variable}>{children}</body>
+      <body className={montserrat.variable}>
+        <Provider>{children}</Provider>
+      </body>
     </html>
   );
 }
