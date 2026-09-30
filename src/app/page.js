@@ -1,6 +1,7 @@
+import SiteNavigation from '../components/site-navigation';
 import FeaturedCards from '../components/featured-cards';
 import GallerySlider from '../components/gallery-slider';
-import { Image } from "@chakra-ui/react"
+import { Card, Image } from "@chakra-ui/react"
 import { Flex, Text } from '@chakra-ui/react';
 
 export default function HomePage() {
@@ -18,6 +19,7 @@ export default function HomePage() {
       }
 
       <Flex
+        id="inicio"
         direction="column"
         align="center"
         justify="space-between"
@@ -27,33 +29,26 @@ export default function HomePage() {
         w="full"
         margin="0 auto"
       >
-        <Flex as="nav" position="fixed" zIndex="100" bg="site.background" height="60px" maxW="1920px" width="100%" p={4} justifyContent="space-between" alignItems="center">
-          <Text color="white" fontSize="xl" fontWeight="bold" letterSpacing="-1px">
-            MisuraDeco
-          </Text>
-          <Flex>
-            <Text color="white" mx={2} cursor="pointer">
-              Inicio
-            </Text>
-            <Text color="white" mx={2} cursor="pointer">
-              Acerca de
-            </Text>
-            <Text color="white" mx={2} cursor="pointer">
-              Contacto
-            </Text>
-          </Flex>
-        </Flex>
+        <SiteNavigation />
 
         <GallerySlider />
         <FeaturedCards />
 
-        <Flex bg="surface" flex="1" minH={['100vh']} width="100%" alignItems="center" justifyContent="center">
-          <Text fontSize="2xl" mt={4} fontfamily="fonts.body" color="primary.700">
-            Bienvenido a nuestra aplicación
-          </Text>
+        <Flex flexDir="column" id="acerca-de" scrollMarginTop="60px" bg="surface" flex="1" minH={['100vh']} width="100%" alignItems="start" pt="1rem">
+          <Text p="1rem" color="red">Sss</Text>
+
+          <Flex display="grid" alignSelf="center" gridTemplateColumns="repeat(2, minmax(0, 1fr))" gap=".8rem">
+            <Flex position="relative" h="320px" w="190px">
+              <Text position="absolute" w="full" color="white" bg="blackAlpha.800">Descripcion</Text>
+              <Image src="https://nicbia.com/uploads/products/1/10003-0.jpg" alt="" />
+              <Flex position="absolute" bottom={0}>
+                <Text>Footer here</Text>
+              </Flex>
+            </Flex>
+          </Flex>
         </Flex>
 
-        <Flex as="footer" bg="primary.100" minH="160px" width="100%" p={4} justifyContent="space-between">
+        <Flex as="footer" id="contacto" scrollMarginTop="60px" bg="primary.100" minH="160px" width="100%" p={4} justifyContent="space-between">
           <Text color="white" fontSize="sm">
             &copy; 2023 Mi Aplicación. Todos los derechos reservados.
           </Text>

@@ -10,7 +10,7 @@ export default function GallerySlider() {
       slideCount={slides.length}
       loop
       width="full"
-      height={["240px", "580px"]}
+      height={["340px", "580px"]}
       overflow="hidden"
       mt="60px"
       position="relative"
@@ -32,7 +32,7 @@ export default function GallerySlider() {
       <Box
         position="absolute"
         insetX={{ base: '0', md: '0px' }}
-        top={["20%", "12%"]}
+        top={["54px", "12%"]}
         transform="translateY(-60%)"
         w="full"
         mx="auto"

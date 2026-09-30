@@ -27,7 +27,7 @@ const items = [
 ];
 
 export default function FeaturedCards() {
-  const slidesPerPage = useBreakpointValue({ base: 1, md: 3 }) ?? 1;
+  const slidesPerPage = useBreakpointValue({ base: 1, md: 2, lg: 3 }) ?? 1;
 
   return (
     <Box as="section" width="full" minW="0" bg="cream" py={{ base: 6, md: 12 }} px={{ base: 4, md: 8 }} aria-labelledby="featured-title">
