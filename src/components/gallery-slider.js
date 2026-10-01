@@ -12,7 +12,6 @@ export default function GallerySlider() {
       width="full"
       height={["340px", "580px"]}
       overflow="hidden"
-      mt="60px"
       position="relative"
       aria-label="Galería"
     >
@@ -29,31 +28,7 @@ export default function GallerySlider() {
           </Carousel.Item>
         ))}
       </Carousel.ItemGroup>
-      <Box
-        position="absolute"
-        insetX={{ base: '0', md: '0px' }}
-        top={["54px", "12%"]}
-        transform="translateY(-60%)"
-        w="full"
-        mx="auto"
-        p={{ base: '4', md: '8' }}
-        bg="rgba(25, 29, 20, 0.58)"
-        backdropFilter="blur(6px)"
-        borderWidth="1px"
-        borderColor="whiteAlpha.300"
-        borderRadius="none"
-        boxShadow="lg"
-        color="text-inverse"
-        textAlign="center"
-        pointerEvents="none"
-      >
-        <Text as="h1" fontSize={{ base: 'xl', md: '2xl' }} fontWeight="semibold" lineHeight="short">
-          Misura decoración.
-        </Text>
-        <Text mt="2" fontSize={{ base: 'sm', md: 'xl' }} lineHeight="moderate">
-          La fuerza de la materia, el arte del diseño.
-        </Text>
-      </Box>
+      
       <Carousel.Control
         position="absolute"
         bottom="4"

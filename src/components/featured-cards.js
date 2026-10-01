@@ -30,7 +30,7 @@ export default function FeaturedCards() {
   const slidesPerPage = useBreakpointValue({ base: 1, md: 2, lg: 3 }) ?? 1;
 
   return (
-    <Box as="section" width="full" minW="0" bg="cream" py={{ base: 6, md: 12 }} px={{ base: 4, md: 8 }} aria-labelledby="featured-title">
+    <Box as="section" id="featured-cards" width="full" minW="0" bg="cream" py={{ base: 6, md: 12 }} px={{ base: 4, md: 8 }} aria-labelledby="featured-title">
       <Box maxW="1200px" mx="auto">
         <Heading id="featured-title" color="primary.700" mb="1rem" ml=".2rem">
           Inspiración para tu hogar

@@ -11,8 +11,27 @@ const links = [
 
 export default function SiteNavigation() {
   const [open, setOpen] = useState(false);
+  const [pastHero, setPastHero] = useState(false);
   const navigation = useRef(null);
   const toggle = useRef(null);
+
+  useEffect(() => {
+    const featuredCards = document.getElementById('featured-cards');
+    if (!featuredCards) return;
+
+    const updateBackground = () => {
+      const navBottom = navigation.current?.getBoundingClientRect().bottom ?? 0;
+      setPastHero(featuredCards.getBoundingClientRect().top <= navBottom);
+    };
+
+    updateBackground();
+    window.addEventListener('scroll', updateBackground, { passive: true });
+    window.addEventListener('resize', updateBackground);
+    return () => {
+      window.removeEventListener('scroll', updateBackground);
+      window.removeEventListener('resize', updateBackground);
+    };
+  }, []);
 
   useEffect(() => {
     if (!open) return;
@@ -41,19 +60,29 @@ export default function SiteNavigation() {
       aria-label="Navegación principal"
       position="fixed"
       zIndex="100"
-      bg="site.background"
       height="60px"
       maxW="1920px"
       width="100%"
-      p={4}
+      p={2}
+      backdropFilter={pastHero ? 'none' : 'blur(20px)'}
+      bg={pastHero ? 'blackAlpha.950' : 'transparent'}
       justifyContent="space-between"
       alignItems="center"
       onBlur={(event) => {
         if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false);
       }}
     >
-      <Text color="white" fontSize="xl" fontWeight="bold" letterSpacing="-1px">
-        MisuraDeco
+      <Text
+        color="white"
+        fontSize="36px"
+        letterSpacing="-3px"
+        fontWeight="900"
+        wordSpacing="-4px"
+        borderRadius="6px"
+        px="6px"
+        py="1px"
+      >
+        misura <Text as="span" fontWeight="400" letterSpacing="-3px" color="primary.300">deco</Text>
       </Text>
       <Flex display={{ base: 'none', md: 'flex' }}>
         {links.map(({ label, href }) => (

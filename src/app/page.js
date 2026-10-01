@@ -35,16 +35,149 @@ export default function HomePage() {
         <FeaturedCards />
 
         <Flex flexDir="column" id="acerca-de" scrollMarginTop="60px" bg="surface" flex="1" minH={['100vh']} width="100%" alignItems="start" pt="1rem">
-          <Text p="1rem" color="red">Sss</Text>
+          <Text fontSize="1.2rem" p=".5rem" color="primary.600" fontWeight="bold">
+            Nuestros productos
+          </Text>
 
-          <Flex display="grid" alignSelf="center" gridTemplateColumns="repeat(2, minmax(0, 1fr))" gap=".8rem">
-            <Flex position="relative" h="320px" w="190px">
-              <Text position="absolute" w="full" color="white" bg="blackAlpha.800">Descripcion</Text>
-              <Image src="https://nicbia.com/uploads/products/1/10003-0.jpg" alt="" />
-              <Flex position="absolute" bottom={0}>
-                <Text>Footer here</Text>
+          <Flex
+            display="grid"
+            alignSelf="center"
+            gridTemplateColumns="repeat(2, minmax(0, 1fr))" gap=".5rem"
+            borderRadius="10px"
+          >
+
+            <Flex flexDir="column" h="280px" w="195px" borderRadius="10px" bg="bg.subtle">
+              <Flex position="relative">
+                <Flex position="absolute" w="full" backdropFilter="blur(8px)" borderTopRadius="10px" px="4px" py="6px">
+                  <Text
+                    px="4px"
+                    py="0rem"
+                    color="white"
+                    bg="primary.400"
+                    borderRadius="4px"
+                    letterSpacing="-1px"
+                    fontSize="12px"
+                    fontWeight="bold"
+                  >
+                    LAMPARAS
+                  </Text>
+                </Flex>
+              </Flex>
+
+              <Image
+                  src="https://nicbia.com/uploads/products/1/10003-0.jpg"
+                  alt=""
+                  borderTopRadius="6px"
+                  h="200px"
+                />
+
+              <Flex flexDir="column" bottom={0} w="full" p=".4rem">
+                <Text fontWeight="bold" fontFamily="heading" fontSize="md" letterSpacing="-1px" color="black">
+                  Lampara de interior
+                </Text>
+                <Text></Text>
               </Flex>
             </Flex>
+
+            <Flex flexDir="column" h="280px" w="195px" borderRadius="10px" bg="bg.subtle">
+              <Flex position="relative">
+                <Flex position="absolute" w="full" backdropFilter="blur(8px)" borderTopRadius="10px" px="4px" py="6px">
+                  <Text
+                    px="4px"
+                    py="0rem"
+                    color="white"
+                    bg="primary.400"
+                    borderRadius="4px"
+                    letterSpacing="-1px"
+                    fontSize="12px"
+                    fontWeight="bold"
+                  >
+                    LAMPARAS
+                  </Text>
+                </Flex>
+              </Flex>
+
+              <Image
+                  src="https://nicbia.com/uploads/products/1/10003-0.jpg"
+                  alt=""
+                  borderTopRadius="6px"
+                  h="200px"
+                />
+
+              <Flex flexDir="column" bottom={0} w="full" p=".4rem">
+                <Text fontWeight="bold" fontFamily="heading" fontSize="md" letterSpacing="-1px" color="black">
+                  Lampara de interior
+                </Text>
+                <Text></Text>
+              </Flex>
+            </Flex>
+
+            <Flex flexDir="column" h="280px" w="195px" borderRadius="10px" bg="bg.subtle">
+              <Flex position="relative">
+                <Flex position="absolute" w="full" backdropFilter="blur(8px)" borderTopRadius="10px" px="4px" py="6px">
+                  <Text
+                    px="4px"
+                    py="0rem"
+                    color="white"
+                    bg="primary.400"
+                    borderRadius="4px"
+                    letterSpacing="-1px"
+                    fontSize="12px"
+                    fontWeight="bold"
+                  >
+                    LAMPARAS
+                  </Text>
+                </Flex>
+              </Flex>
+
+              <Image
+                  src="https://nicbia.com/uploads/products/1/10003-0.jpg"
+                  alt=""
+                  borderTopRadius="6px"
+                  h="200px"
+                />
+
+              <Flex flexDir="column" bottom={0} w="full" p=".4rem">
+                <Text fontWeight="bold" fontFamily="heading" fontSize="md" letterSpacing="-1px" color="black">
+                  Lampara de interior
+                </Text>
+                <Text></Text>
+              </Flex>
+            </Flex>
+
+            <Flex flexDir="column" h="280px" w="195px" borderRadius="10px" bg="bg.subtle">
+              <Flex position="relative">
+                <Flex position="absolute" w="full" backdropFilter="blur(8px)" borderTopRadius="10px" px="4px" py="6px">
+                  <Text
+                    px="4px"
+                    py="0rem"
+                    color="white"
+                    bg="primary.400"
+                    borderRadius="4px"
+                    letterSpacing="-1px"
+                    fontSize="12px"
+                    fontWeight="bold"
+                  >
+                    LAMPARAS
+                  </Text>
+                </Flex>
+              </Flex>
+
+              <Image
+                  src="https://nicbia.com/uploads/products/1/10003-0.jpg"
+                  alt=""
+                  borderTopRadius="6px"
+                  h="200px"
+                />
+
+              <Flex flexDir="column" bottom={0} w="full" p=".4rem">
+                <Text fontWeight="bold" fontFamily="heading" fontSize="md" letterSpacing="-1px" color="black">
+                  Lampara de interior
+                </Text>
+                <Text></Text>
+              </Flex>
+            </Flex>
+
           </Flex>
         </Flex>
 
